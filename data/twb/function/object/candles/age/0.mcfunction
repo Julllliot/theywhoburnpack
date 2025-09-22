@@ -1,0 +1,1 @@
+setblock ~ ~ ~ candle[candles=1,lit=false]

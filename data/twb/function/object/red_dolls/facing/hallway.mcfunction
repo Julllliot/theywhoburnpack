@@ -1,0 +1,1 @@
+execute positioned -1.0 2 20.0 as @e[type=minecraft:armor_stand,tag=red_doll,distance=..2,limit=8] at @s facing 3.180 2 16 run tp @s ~ ~ ~ ~ ~
