@@ -1,0 +1,1 @@
+scoreboard players set @p twb.seesSeraph 1
