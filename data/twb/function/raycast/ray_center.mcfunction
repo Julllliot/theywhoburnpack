@@ -1,0 +1,11 @@
+$function twb:raycast/center {x:-.5$(n),y:$(n2)}
+$function twb:raycast/center {x:-.4$(n),y:$(n2)}
+$function twb:raycast/center {x:-.3$(n),y:$(n2)}
+$function twb:raycast/center {x:-.2$(n),y:$(n2)}
+$function twb:raycast/center {x:-.1$(n),y:$(n2)}
+$function twb:raycast/center {x:0,y:$(n2)}
+$function twb:raycast/center {x:.1$(n),y:$(n2)}
+$function twb:raycast/center {x:.2$(n),y:$(n2)}
+$function twb:raycast/center {x:.3$(n),y:$(n2)}
+$function twb:raycast/center {x:.4$(n),y:$(n2)}
+$function twb:raycast/center {x:.5$(n),y:$(n2)}
