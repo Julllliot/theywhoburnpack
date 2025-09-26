@@ -1,3 +1,3 @@
 execute as @e[type=marker,tag=seraph.marker,tag=so.marker_id19,limit=1,sort=random] at @s run summon enderman ~ ~1 ~ {Tags:["so","seraph.entity","so.entity"],Silent:1b,NoAI:1b,Invulnerable:1b}
-execute as @e[type=enderman,tag=seraph.entity] at @s run summon interaction ~ ~ ~ {Tags:["so","seraph.entity","so.entity"],width:.5,height:3}
-execute as @e[type=enderman,tag=seraph.entity] at @s run summon marker ~ ~1.5 ~ {Tags:["so","seraph.entity","so.entity"]}
+execute as @e[type=enderman,tag=seraph.entity] at @s run summon interaction ~ ~ ~ {Tags:["so","seraph.entity","so.entity","ray.target"],width:.5,height:3}
+execute as @e[type=enderman,tag=seraph.entity] at @s run summon marker ~ ~1.5 ~ {Tags:["so","seraph.entity","so.entity","ray.target"]}
