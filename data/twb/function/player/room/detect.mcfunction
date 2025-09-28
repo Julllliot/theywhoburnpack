@@ -3,7 +3,7 @@ schedule function twb:player/room/detect 20t
 execute as @a[gamemode=adventure,x=16,y=1,z=-9,dx=-22,dy=6,dz=24] run return run function twb:player/room/section1/step
 execute as @a[gamemode=adventure,x=8,y=2,z=16,dx=-14,dy=6,dz=15] run return run function twb:player/room/section2/step
 
-execute store result score dummy twb.inRoom run return 0
+execute store result score $player inRoom run return 0
 
 
 ## DOCUMENTING
