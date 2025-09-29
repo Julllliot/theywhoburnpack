@@ -1,0 +1,1 @@
+function twb:event/seraph/spawn/set with storage twb:event seraph.spawn.stage0
