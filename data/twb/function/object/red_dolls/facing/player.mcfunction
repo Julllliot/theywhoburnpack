@@ -1,1 +1,1 @@
-execute positioned -1.0 2 20.0 as @e[type=minecraft:armor_stand,tag=red_doll,distance=..2,limit=8] at @s facing entity @p[gamemode=adventure] eyes run tp @s ~ ~ ~ ~ ~
+$execute positioned -1.0 2 20.0 as @e[type=minecraft:armor_stand,tag=red_doll,distance=..2,limit=8] at @s run tp @s ~ ~ ~ facing entity $(player) eyes

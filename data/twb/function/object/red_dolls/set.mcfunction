@@ -1,10 +1,16 @@
 # 0//-3 3 19 , 0//-3 3 20
 #summon armor_stand ~ ~ ~ {DeathTime: 0s, OnGround: 1b, AbsorptionAmount: 0.0f, Invulnerable: 1b, Brain: {memories: {}}, Pose: {}, Rotation: [-135.0f, 0.0f], HurtByTimestamp: 0, attributes: [{base: 0.0d, id: "minecraft:armor"}, {base: 0.0d, id: "minecraft:armor_toughness"}, {base: 0.7d, id: "minecraft:movement_speed"}], fall_distance: 0.0d, Invisible: 0b, Air: 300s, UUID: [I; -402701637, 841305734, -1381424294, -1869398172], Pos: [0.5d, 2.5d, 19.5d], Health: 20.0f, Motion: [0.0d, -0.0784000015258789d, 0.0d], NoBasePlate: 1b, equipment: {feet: {id: "minecraft:leather_boots", count: 1, components: {"minecraft:dyed_color": 11546150}}, legs: {id: "minecraft:leather_leggings", count: 1, components: {"minecraft:dyed_color": 11546150}}, chest: {id: "minecraft:leather_chestplate", count: 1, components: {"minecraft:dyed_color": 11546150}}}, DisabledSlots: 0, HurtTime: 0s, ShowArms: 1b, FallFlying: 0b, Fire: 0s, PortalCooldown: 0, Small: 1b}
 
-execute positioned -1.0 2 20.0 if entity @e[type=armor_stand,tag=red_doll,distance=..2] run return 0
+execute positioned -1.0 2 20.0 if entity @e[type=armor_stand,tag=red_doll,distance=..2] run return fail
 
-data merge storage julliapi:setobj {xyz:[0,2,19, -1,2,19, -2,2,19, -3,2,19, 0,2,20, -1,2,20, -2,2,20, -3,2,20],markernbt:"{Tags:[\"so\",\"red_doll\",\"so.marker.entity\"]}",entity:"armor_stand",entitynbt:"{Tags:[\"so\",\"red_doll\"], NoBasePlate: 1b, equipment: {feet: {id: \"minecraft:leather_boots\", count: 1, components: {\"minecraft:dyed_color\": 11546150}}, legs: {id: \"minecraft:leather_leggings\", count: 1, components: {\"minecraft:dyed_color\": 11546150}}, chest: {id: \"minecraft:leather_chestplate\", count: 1, components: {\"minecraft:dyed_color\": 11546150}}}, Small: 1b, Rotation:[180f,0f]}"}
-scoreboard players set dummy julliapi.setobjQuantity 8
-function julliot:setobj/main with storage julliapi:setobj
+function julliot:setobj/main {\
+xyz:[0,2,19, -1,2,19, -2,2,19, -3,2,19, 0,2,20, -1,2,20, -2,2,20, -3,2,20],\
+markernbt:'{Tags:["so","red_doll","so.marker.entity"]}',\
+entity:'armor_stand',\
+entitynbt:'{Tags:["so","red_doll"], NoBasePlate: 1b, equipment: {feet: {id: "minecraft:leather_boots", count: 1, components: {"minecraft:dyed_color": 11546150}}, legs: {id: "minecraft:leather_leggings", count: 1, components: {"minecraft:dyed_color": 11546150}}, chest: {id: "minecraft:leather_chestplate", count: 1, components: {"minecraft:dyed_color": 11546150}}}, Small: 1b, Rotation:[180f,0f]}',\
+block:'',\
+quantity:8,\
+temp:'red_dolls'\
+}
 
 execute positioned -1.0 2 20.0 run kill @e[type=marker,tag=red_doll,distance=..2]

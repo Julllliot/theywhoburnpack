@@ -2,4 +2,5 @@
 
 function twb:main/init
 
-function twb:data_storage/event
+data remove storage twb:game event
+function twb:data_dump/game

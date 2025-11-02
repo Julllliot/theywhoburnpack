@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "oak_trapdoor"
+    "oak_trapdoor",
+    "spruce_trapdoor",
+    "oak_door"
   ]
 }
