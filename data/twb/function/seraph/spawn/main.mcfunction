@@ -1,10 +1,7 @@
 # check for
-execute if data storage twb:event seraph.spawn.schedule.apparition.exists run function twb:event/seraph/schedule/clear/apparition
-execute positioned 5. 3. 13.5 if entity @e[type=interaction,tag=seraph.entity,limit=1,distance=..25] run return run tellraw @a[tag=debug] \
-{"color":gray,"text":"seraph/spawn/main: It already exists a seraph entity. Not proceeded."}
-execute positioned 5. 3. 13.5 if entity @e[type=interaction,tag=seraph.apparition,limit=1,distance=..25] run function twb:seraph/apparition/despawn
-
-data remove storage twb:event seraph.spawn.schedule.spawn.exists
+execute positioned 5. 3. 13.5 if entity @e[type=interaction,tag=spawned,limit=1,distance=..25] run return \
+run tellraw @a[tag=debug] {"color":gold,"text":"seraph/spawn/main: It already exists a seraph entity. Not proceeded."}
+execute positioned 5. 3. 13.5 if entity @e[type=interaction,tag=apparition,limit=1,distance=..25] run function twb:seraph/apparition/despawn
 
 # spawn
 function twb:seraph/spawn/point
