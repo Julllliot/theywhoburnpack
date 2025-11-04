@@ -1,4 +1,4 @@
-schedule function twb:event/seraph/spawn/stage 5s
+$schedule function twb:event/seraph/spawn/stage $(frequency)s
 
 execute store result score $seraph chance run random value 0..100
 $execute if score $seraph chance matches $(chance_apparition) run return run function twb:seraph/apparition/main
