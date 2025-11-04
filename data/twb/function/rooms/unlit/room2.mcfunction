@@ -1,0 +1,2 @@
+$execute positioned $(laundry_room1) run tag @e[type=marker,tag=marker.seraph.spawnpoint,limit=1,distance=...1] add unlit
+$execute positioned $(laundry_room2) run tag @e[type=marker,tag=marker.seraph.spawnpoint,limit=1,distance=...1] add unlit

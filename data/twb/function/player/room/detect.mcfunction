@@ -23,9 +23,9 @@ execute store result score $player inRoom run return 0
 #execute if entity @a[limit=1,x=5,y=2,z=11,dx=7,dy=2,dz=-7] run return 7
 #hallway living
 #execute if entity @a[limit=1,x=12,y=2,z=12,dx=-8,dy=2,dz=3] run return 8
-#hallway bedroom
+#hallway shrine
 #execute if entity @a[limit=1,x=4,y=2,z=3,dx=-4,dy=2,dz=12] run return 9
-#bedroom
+#shrine
 #execute if entity @a[limit=1,x=0,y=2,z=4,dx=-6,dy=2,dz=8] run return 10
 #doll room
 #execute if entity @a[limit=1,x=0,y=2,z=13,dx=-5,dy=2,dz=7] run return 11
