@@ -10,7 +10,6 @@ execute positioned 5. 3. 13.5 as @e[type=marker,tag=marker.seraph.spawnpoint,lim
 
 schedule function twb:seraph/spawn/despawn 60s
 
-# call player looking detection
 function twb:player/looking_at/seraph
 
 tellraw @a[tag=debug] [{"text":"seraph spawned in ","color":gray}, {"entity":"@e[type=interaction,tag=seraph.entity,limit=1]","nbt":"Pos"}]
