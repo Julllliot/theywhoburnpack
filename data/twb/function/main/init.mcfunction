@@ -8,6 +8,7 @@ schedule clear twb:player/room/detect
 schedule clear twb:event/seraph/spawn/stage
 schedule clear twb:seraph/spawn/despawn
 schedule clear twb:seraph/apparition/despawn
+schedule clear twb:seraph/spawn/give_up
 
 kill @e[tag=twb.entity]
 
