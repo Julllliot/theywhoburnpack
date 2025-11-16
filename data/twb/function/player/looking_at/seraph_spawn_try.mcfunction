@@ -8,4 +8,5 @@ ray_length:80,\
 temp:'seraph_spawn_try'\
 }
 
-execute unless score @a[gamemode=!spectator,limit=1] julliapi.lookingAtTarget matches 1 as @a[gamemode=!spectator,limit=1] at @s unless entity @n[type=interaction,tag=seraph.spawn_try,distance=..1.5] run function twb:seraph/spawn/spawn
+execute unless score @a[gamemode=!spectator,limit=1] julliapi.lookingAtTarget matches 1 as @a[gamemode=!spectator,limit=1] at @s unless entity @n[type=interaction,tag=seraph.spawn_try,distance=..1.5] if entity @n[type=interaction,tag=seraph.spawn_try] run function twb:seraph/spawn/spawn
+
