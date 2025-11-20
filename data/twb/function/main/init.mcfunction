@@ -13,3 +13,4 @@ schedule clear twb:seraph/spawn/give_up
 kill @e[tag=twb.entity]
 
 effect give @a saturation infinite 0 true
+effect give @a instant_health 1 10 true

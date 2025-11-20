@@ -3,7 +3,7 @@
 # @context any entity at @s
 
 schedule function twb:object/candles/timer/loop 1t
-
+ 
 function julliot:timer/main \
 {\
 	ticks: 0, repeat: 0, \
