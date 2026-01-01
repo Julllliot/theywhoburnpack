@@ -5,6 +5,7 @@ player_selector:'@a[gamemode=!spectator,limit=1]',\
 target_selector:'@n[type=interaction,tag=seraph.entity,distance=..20]',\
 target_center:1.5,\
 ray_length:80,\
+ray_args:'unless block ~ ~ ~ #twb:exceptions unless block ~ ~ ~ spruce_door[open=false] unless block ~ ~ ~ dark_oak_door[open=false] ',\
 temp:'seraph'\
 }
 

@@ -1,1 +1,1 @@
-function twb:event/clock/loop with storage twb:game event.clock
+function twb:event/clock/loop

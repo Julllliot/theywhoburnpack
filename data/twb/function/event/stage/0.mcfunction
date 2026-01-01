@@ -1,1 +1,1 @@
-function twb:event/seraph/spawn/set with storage twb:game event.clock
+function twb:event/seraph/spawn/set with storage twb:event args.clock

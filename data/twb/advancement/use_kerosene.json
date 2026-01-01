@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "using_item": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:potion",
+            "predicates": {
+              "minecraft:custom_data": "{fuel:true}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "twb:object/kerosene_lamp/fill_translate"
+    }
+  }

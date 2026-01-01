@@ -1,4 +1,3 @@
-scoreboard players set $clock_stage n 0
-data modify storage twb:game event.clock.stage set value 0
+scoreboard players set $clock_stage n -1
 
 function twb:event/clock/set

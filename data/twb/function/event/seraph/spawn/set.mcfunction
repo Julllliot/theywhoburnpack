@@ -1,1 +1,1 @@
-$function twb:event/seraph/spawn/clock with storage twb:game event.seraph.spawn.stage$(stage)
+$function twb:event/seraph/spawn/clock with storage twb:event args.seraph.spawn.stage$(stage)
